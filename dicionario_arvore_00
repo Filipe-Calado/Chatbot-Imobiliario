@@ -1,0 +1,174 @@
+arvore={
+    0 :['Quartos >= 1.5', 1, 53]
+
+
+0 :['bedrooms_discretized <= 1.5']
+1 :['sqft_living_discretized <= 1.5']
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] 
+2 :['locations_discretized <= 0.5']
+1 -> 2 
+3 :['waterfront_discretized <= 0.5']
+2 -> 3 
+4 ['bathrooms_discretized <= 0.5']
+3 -> 4 
+5 ['bedrooms_discretized <= 0.5']
+4 -> 5 ;
+6: ['MEDIA'] 
+5 -> 6 
+7 :['MEDIA']
+5 -> 7
+8 :['grade_discretized <= 0.5']
+4 -> 8
+9 :['MEDIA']
+8 -> 9
+10 :['MEDIA'] 
+8 -> 10
+11 :['CARA'] 
+3 -> 11
+12 :['locations_discretized <= 1.5'] 
+2 -> 12
+13 :['sqft_above_discretized <= 0.5']
+12 -> 13 
+14 :['view_discretized <= 0.5'] 
+13 -> 14 
+15 :['BARATA'] 
+14 -> 15 
+16 :['MEDIA'] 
+14 -> 16 
+17 :['sqft_living15_discretized <= 1.5']
+13 -> 17
+18 :['BARATA']
+17 -> 18
+19 :['MEDIA"] 
+17 -> 19 
+20 :['grade_discretized <= 1.5']
+12 -> 20 
+21 :['sqft_living_discretized <= 0.5']
+20 -> 21 
+22 :['MEDIA']
+21 -> 22 
+23 :['MEDIA'] 
+21 -> 23
+24 :['sqft_living15_discretized <= 1.0']
+20 -> 24 
+25 :['MEDIA']
+24 -> 25
+26 :['MEDIA']
+24 -> 26 
+27 :['bathrooms_discretized <= 1.5'] 
+1 -> 27
+28 :['sqft_living15_discretized <= 1.0'] 
+27 -> 28 
+29 :['locations_discretized <= 1.5']
+28 -> 29
+30 ['bedrooms_discretized <= 0.5']
+29 -> 30
+31 :['CARA']
+30 -> 31
+32 :['MEDIA'] 
+30 -> 32
+33 :['bedrooms_discretized <= 0.5'] 
+29 -> 33
+34 :['MEDIA']
+33 -> 34
+35 :['MEDIA']
+33 -> 35
+36 :['locations_discretized <= 0.5']
+28 -> 36
+37 :['CARA']
+36 -> 37
+38 :['sqft_above_discretized <= 0.5']
+36 -> 38 
+39 :['MEDIA']
+38 -> 39 
+40 :['BARATA']
+38 -> 40
+41 :['bedrooms_discretized <= 0.5'] 
+27 -> 41
+42 :['locations_discretized <= 0.5']
+41 -> 42 
+43 :['sqft_living15_discretized <= 1.0']
+42 -> 43 
+44 :['CARA']
+43 -> 44
+45 :['MEDIA']
+43 -> 45
+46 :['sqft_above_discretized <= 0.5']
+42 -> 46
+47 :['MEDIA']
+46 -> 47 ;
+48 :['MEDIA']
+46 -> 48
+49 :['sqft_living15_discretized <= 1.0']
+41 -> 49 
+50 :['sqft_above_discretized <= 0.5']
+49 -> 50 
+51 :['MEDIA'] 
+50 -> 51 
+52 :['MEDIA']
+50 -> 52 
+53 :['grade_discretized <= 0.5']
+49 -> 53 
+54 :['MEDIA']
+53 -> 54 
+55 :['CARA']
+53 -> 55 
+56 :['sqft_living15_discretized <= 1.5']
+0 -> 56 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+57 :['waterfront_discretized <= 0.5']
+56 -> 57
+58 :['sqft_living_discretized <= 1.5']
+57 -> 58
+59 :['sqft_living15_discretized <= 0.5']
+58 -> 59 
+60 :['bathrooms_discretized <= 1.5']
+59 -> 60 
+61 :['CARA'] 
+60 -> 61 
+62 :['BARATA'] 
+60 -> 62 
+63 :['sqft_above_discretized <= 1.5']
+59 -> 63 
+64 :['MEDIA']
+63 -> 64 
+65 :['MEDIA']
+63 -> 65 
+66 :['MEDIA']
+58 -> 66 
+67 :['CARA']
+57 -> 67 
+68 :['sqft_living_discretized <= 0.5']
+56 -> 68 
+69 :['grade_discretized <= 0.5']
+68 -> 69 
+70 :['bathrooms_discretized <= 1.5']
+69 -> 70 
+71 :['locations_discretized <= 1.5']
+70 -> 71 
+72 :['BARATA']
+71 -> 72 
+73 :['BARATA']
+71 -> 73
+74 :['sqft_above_discretized <= 1.5']
+70 -> 74 
+75 :['MEDIA']
+74 -> 75 
+76 :['BARATA']
+74 -> 76
+77 :['locations_discretized <= 0.5']
+69 -> 77 
+78 :['bathrooms_discretized <= 1.0']
+77 -> 78
+79 :['MEDIA']
+78 -> 79 
+80 :['BARATA']
+78 -> 80
+81 :['MEDIA']
+77 -> 81
+82 :['bathrooms_discretized <= 0.5']
+68 -> 82
+83 :['MEDIA']
+82 -> 83
+84 :['BARATA']
+82 -> 84
+}
