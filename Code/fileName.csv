@@ -1,0 +1,70 @@
+|--- locations_discretized <= 0.50
+|   |--- sqft_living_discretized <= 0.50
+|   |   |--- bathrooms_discretized <= 0.50
+|   |   |   |--- grade_discretized <= 0.50
+|   |   |   |   |--- bedrooms_discretized <= 0.50
+|   |   |   |   |   |--- sqft_above_discretized <= 0.50
+|   |   |   |   |   |   |--- weights: [17.00, 8.00, 14.00] class: 0
+|   |   |   |   |   |--- sqft_above_discretized >  0.50
+|   |   |   |   |   |   |--- weights: [5.00, 1.00, 1.00] class: 0
+|   |   |   |   |--- bedrooms_discretized >  0.50
+|   |   |   |   |   |--- sqft_above_discretized <= 0.50
+|   |   |   |   |   |   |--- weights: [69.00, 5.00, 30.00] class: 0
+|   |   |   |   |   |--- sqft_above_discretized >  0.50
+|   |   |   |   |   |   |--- weights: [0.00, 1.00, 0.00] class: 1
+|   |   |   |--- grade_discretized >  0.50
+|   |   |   |   |--- bedrooms_discretized <= 0.50
+|   |   |   |   |   |--- weights: [4.00, 0.00, 2.00] class: 0
+|   |   |   |   |--- bedrooms_discretized >  0.50
+|   |   |   |   |   |--- weights: [4.00, 0.00, 10.00] class: 2
+|   |   |--- bathrooms_discretized >  0.50
+|   |   |   |--- view_discretized <= 0.50
+|   |   |   |   |--- weights: [18.00, 0.00, 2.00] class: 0
+|   |   |   |--- view_discretized >  0.50
+|   |   |   |   |--- weights: [1.00, 0.00, 1.00] class: 0
+|   |--- sqft_living_discretized >  0.50
+|   |   |--- waterfront_discretized <= 0.50
+|   |   |   |--- sqft_living15_discretized <= 0.50
+|   |   |   |   |--- weights: [2.00, 6.00, 0.00] class: 1
+|   |   |   |--- sqft_living15_discretized >  0.50
+|   |   |   |   |--- bathrooms_discretized <= 0.50
+|   |   |   |   |   |--- grade_discretized <= 0.50
+|   |   |   |   |   |   |--- weights: [2.00, 1.00, 2.00] class: 0
+|   |   |   |   |   |--- grade_discretized >  0.50
+|   |   |   |   |   |   |--- weights: [15.00, 2.00, 0.00] class: 0
+|   |   |   |   |--- bathrooms_discretized >  0.50
+|   |   |   |   |   |--- sqft_above_discretized <= 0.50
+|   |   |   |   |   |   |--- weights: [5.00, 1.00, 0.00] class: 0
+|   |   |   |   |   |--- sqft_above_discretized >  0.50
+|   |   |   |   |   |   |--- weights: [9.00, 11.00, 3.00] class: 1
+|   |   |--- waterfront_discretized >  0.50
+|   |   |   |--- weights: [0.00, 0.00, 2.00] class: 2
+|--- locations_discretized >  0.50
+|   |--- grade_discretized <= 0.50
+|   |   |--- sqft_living_discretized <= 0.50
+|   |   |   |--- bedrooms_discretized <= 0.50
+|   |   |   |   |--- weights: [5.00, 12.00, 2.00] class: 1
+|   |   |   |--- bedrooms_discretized >  0.50
+|   |   |   |   |--- weights: [19.00, 13.00, 1.00] class: 0
+|   |   |--- sqft_living_discretized >  0.50
+|   |   |   |--- weights: [1.00, 16.00, 0.00] class: 1
+|   |--- grade_discretized >  0.50
+|   |   |--- view_discretized <= 0.50
+|   |   |   |--- bathrooms_discretized <= 0.50
+|   |   |   |   |--- bedrooms_discretized <= 0.50
+|   |   |   |   |   |--- sqft_above_discretized <= 0.50
+|   |   |   |   |   |   |--- weights: [0.00, 1.00, 0.00] class: 1
+|   |   |   |   |   |--- sqft_above_discretized >  0.50
+|   |   |   |   |   |   |--- weights: [8.00, 0.00, 0.00] class: 0
+|   |   |   |   |--- bedrooms_discretized >  0.50
+|   |   |   |   |   |--- sqft_living_discretized <= 0.50
+|   |   |   |   |   |   |--- weights: [6.00, 1.00, 2.00] class: 0
+|   |   |   |   |   |--- sqft_living_discretized >  0.50
+|   |   |   |   |   |   |--- weights: [0.00, 2.00, 0.00] class: 1
+|   |   |   |--- bathrooms_discretized >  0.50
+|   |   |   |   |--- bedrooms_discretized <= 0.50
+|   |   |   |   |   |--- weights: [5.00, 7.00, 2.00] class: 1
+|   |   |   |   |--- bedrooms_discretized >  0.50
+|   |   |   |   |   |--- weights: [1.00, 0.00, 0.00] class: 0
+|   |   |--- view_discretized >  0.50
+|   |   |   |--- weights: [3.00, 0.00, 0.00] class: 0
